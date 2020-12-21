@@ -1,14 +1,14 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
     <router-view/>
   </div>
 </template>
 
 <style>
+  /* fonts */
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat');
+  @import url('https://fonts.googleapis.com/css2?family=Raleway');
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -16,17 +16,24 @@
   text-align: center;
   color: #2c3e50;
 }
-
-#nav {
-  padding: 30px;
+div.spacer-horizontal {
+    width: 100%;
+    height: 100px;
+}
+div.spacer-horizontal2 {
+    width: 100%;
+    height: 50px;
+}
+div.spacer-horizontal3 {
+    width: 100%;
+    height: 40px;
+}
+div.spacer-horizontal4 {
+    width: 100%;
+    height: 30px;
+}
+html {
+  font-size: 1rem;
 }
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
 </style>
